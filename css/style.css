@@ -280,12 +280,17 @@ body.color5 {
 .section {
     position: fixed;
     top: 0;
-    left: 270px;
     display: block;
     background-color: var(--bg-main);
     height: 100vh;
     width: calc(100% - 270px);
     overflow-y: auto;
+    left: 100%;
+    transition: left .3s ease-in-out;
+}
+
+.section.active {
+    left: 270px;
 }
 
 .section .container {
@@ -409,10 +414,6 @@ body.color5 {
     background-color: black;
     filter: drop-shadow(11px 4px 7px var(--text-second));
     box-shadow: 0 0 11px var(--text-second);
-}
-
-.home__section {
-    display: none;
 }
 
 /* =========== Home Section End ===========  */
@@ -735,3 +736,79 @@ body.color5 {
 }
 
 /* =========== Projects Section End ===========  */
+
+
+/* =========== Contact Section Start ===========  */
+
+.contact__container .heading,
+.contact__container h3 {
+    text-align: center;
+}
+
+.contact__icons {
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    margin-block: 1.3rem;
+}
+
+.icon__item {
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    border: 1px solid var(--text-second);
+    border-radius: 1.2rem;
+    padding: .5rem 1.3rem;
+}
+
+.icon__item .icon span {
+    color: var(--working-color);
+    vertical-align: middle;
+    font-size: 2.5rem;
+}
+
+.icon__item a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--text-second);
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    margin-block: 2.1rem;
+}
+
+.contact__name {
+    display: flex;
+    gap: 1.2rem;
+    align-self: stretch;
+}
+
+.contact__form .half__width {
+    width: 100%;
+}
+
+.contact__form .full__width {
+    width: 100%;
+}
+
+.contact__form *[placeholder] {
+    padding: .8rem 1.6rem;
+    border-radius: 1.5rem;
+    outline: none;
+    border: 1px solid var(--text-second);
+    color: var(--text-main);
+    font-weight: 500;
+    resize: none;
+    background-color: transparent;
+}
+
+.contact__icons+.heading {
+    margin-top: 3rem;
+}
+
+/* =========== Contact Section End ===========  */

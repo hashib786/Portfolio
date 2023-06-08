@@ -35,7 +35,7 @@
       </div>
       <div class="nav__links">
         <ul>
-          <li class="">
+          <li class="active">
             <span class="material-symbols-outlined"> home </span>
             <span>Home</span>
           </li>
@@ -51,7 +51,7 @@
             <span class="material-symbols-outlined"> work </span>
             <span>Projects</span>
           </li>
-          <li class="active">
+          <li class="">
             <span class="material-symbols-outlined"> call </span>
             <span>Contact Us</span>
           </li>
@@ -85,7 +85,7 @@
     <!-- =========== Setting and Background Changer End =========== -->
 
     <!-- =========== Home Section Start =========== -->
-    <section class="section home__section">
+    <section class="section home__section active">
       <div class="container">
         <div class="home__container">
           <div class="home__left">
@@ -562,14 +562,72 @@
 
     <!-- =========== Project Section End =========== -->
 
-    <!-- =========== Project Section End =========== -->
+    <!-- =========== Contact Section Start =========== -->
 
     <section class="section contact__section">
       <div class="container">
         <h1 class="heading">Contact Me</h1>
+        <div class="contact__container">
+          <h1 class="heading"><span>Have You Any Questions?</span></h1>
+          <h3>I'M AT YOUR SERVICE</h3>
+
+          <div class="contact__icons">
+            <div class="icon__item">
+              <div class="icon">
+                <span class="material-symbols-outlined"> mail </span>
+              </div>
+              <a href="mailto:hashibraja23@gamil.com" target="_blank"
+                >hashibraja23@gamil.com</a
+              >
+            </div>
+            <div class="icon__item">
+              <div class="icon">
+                <span class="material-symbols-outlined"> call </span>
+              </div>
+              <a href="tel:+91 6267024102" target="_blank">+91 626 702 4102</a>
+            </div>
+          </div>
+
+          <h1 class="heading"><span>SEND ME AN EMAIL</span></h1>
+          <h3>I'M VERY RESPONSIVE TO MESSAGE</h3>
+
+          <form class="contact__form">
+            <div class="contact__name">
+              <input
+                class="half__width"
+                required
+                type="text"
+                minlength="5"
+                placeholder="Your Name *"
+              />
+              <input
+                class="half__width"
+                required
+                type="email"
+                placeholder="Your Email *"
+              />
+            </div>
+            <input
+              class="full__width"
+              required
+              type="text"
+              minlength="5"
+              placeholder="Subject *"
+            />
+            <textarea
+              class="full__width"
+              required
+              cols="15"
+              rows="5"
+              minlength="15"
+              placeholder="Message"
+            ></textarea>
+            <button class="btn">Send Message</button>
+          </form>
+        </div>
       </div>
     </section>
 
-    <!-- =========== Project Section End =========== -->
+    <!-- =========== Contact Section End =========== -->
   </body>
 </html>

@@ -1,3 +1,9 @@
+import { colorChange } from "./colorChange.js";
+import { navigation } from "./navigation.js";
+
+colorChange();
+navigation();
+
 // const progressBars = [...document.getElementsByClassName("bar__container-box")];
 // const skillSeciton = document.getElementsByClassName("skill__section")[0];
 
