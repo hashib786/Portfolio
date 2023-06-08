@@ -950,4 +950,8 @@ body.color5 {
     .btn {
         font-size: 0.9rem;
     }
+
+    .section {
+        padding-bottom: 2rem;
+    }
 }
