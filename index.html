@@ -27,6 +27,7 @@
     <!-- =========== Nav Link Start =========== -->
 
     <div class="nav__container">
+      <div class="blur__effect"></div>
       <div class="nav__logo">
         <div class="logo__left"></div>
         <!-- <img src="./img/logo.png" alt="Logo" class="logo__image" /> -->
@@ -82,6 +83,15 @@
         </div>
       </div>
     </div>
+
+    <div class="hemburgers">
+      <div class="hemburger">
+        <span class="material-symbols-outlined"> menu </span>
+      </div>
+      <div class="cross">
+        <span class="material-symbols-outlined"> close </span>
+      </div>
+    </div>
     <!-- =========== Setting and Background Changer End =========== -->
 
     <!-- =========== Home Section Start =========== -->
@@ -99,7 +109,7 @@
               to solve problems. Proven ability to deliver high-quality work on
               time and within budget.
             </p>
-            <button class="btn">More About Me</button>
+            <button class="btn" id="moreAbout">More About Me</button>
           </div>
           <div class="home__right">
             <div class="logo__left"></div>
@@ -129,8 +139,13 @@
           </p>
 
           <div class="buttons">
-            <button class="btn">Download CV</button>
-            <button class="btn">Hire Me</button>
+            <button
+              class="btn"
+              onclick="window.open('./img/Hashib Resume 16-05-2023.pdf', '_blank');"
+            >
+              Download CV
+            </button>
+            <button class="btn" id="hireMe">Hire Me</button>
           </div>
 
           <div class="about__aditional">
