@@ -3,6 +3,10 @@ const backgroundChange = document.querySelector(".backgroundChange");
 const essentialContainer = document.querySelector(".essential__container");
 const colorItem = [...document.getElementsByClassName("colors__item")];
 
+// checking default background
+const { matches } = window.matchMedia("(prefers-color-scheme: dark)");
+matches && document.body.classList.add("dark");
+
 export const colorChange = () => {
   settingBtn.addEventListener("click", () => {
     essentialContainer.classList.toggle("active");
