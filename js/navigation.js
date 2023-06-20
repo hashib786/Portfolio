@@ -2,6 +2,7 @@ let sections = [...document.getElementsByClassName("section")];
 const navLinks = [...document.querySelectorAll(".nav__links ul li")];
 const moreAbout = document.getElementById("moreAbout");
 const hireMe = document.getElementById("hireMe");
+const logoText = document.querySelector(".logo__text");
 
 const navContainer = document.querySelector(".nav__container");
 const blurArea = document.querySelector(".blur__effect");
@@ -32,6 +33,7 @@ export const navigation = () => {
     });
   });
 
+  logoText.addEventListener("click", () => render(0));
   moreAbout.addEventListener("click", () => render(1));
   hireMe.addEventListener("click", () => render(4));
 

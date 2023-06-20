@@ -96,6 +96,7 @@ body.color5 {
     align-items: center;
     justify-content: center;
     letter-spacing: 0.1rem;
+    cursor: pointer;
 }
 
 .logo__text span {
