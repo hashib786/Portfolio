@@ -984,3 +984,9 @@ body.color5 {
         padding-bottom: 2rem;
     }
 }
+
+@media (max-width:560px) {
+    .heading:has(.after__cursor) {
+        font-size: 1rem;
+    }
+}
