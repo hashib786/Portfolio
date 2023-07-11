@@ -379,6 +379,34 @@ body.color5 {
     margin-bottom: 1.1rem;
 }
 
+.after__cursor {
+    position: relative;
+    display: inline-block;
+}
+
+.after__cursor::after {
+    content: "";
+    width: 3px;
+    height: 33px;
+    background-color: var(--working-color);
+    position: absolute;
+    top: 49%;
+    transform: translateY(-50%);
+    right: -8px;
+    display: inline-block;
+    animation: cursor .3s ease-in-out infinite alternate;
+}
+
+@keyframes cursor {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 33px;
+    }
+}
+
 .heading .style {
     font-family: 'Great Vibes', cursive;
 }
