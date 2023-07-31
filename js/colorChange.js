@@ -1,7 +1,6 @@
 const settingBtn = document.querySelector(".setting");
 const backgroundChange = document.querySelector(".backgroundChange");
 const essentialContainer = document.querySelector(".essential__container");
-const colorItem = [...document.getElementsByClassName("colors__item")];
 const workingColor = document.querySelector(".working__colors");
 console.dir(workingColor);
 
