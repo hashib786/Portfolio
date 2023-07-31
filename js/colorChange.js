@@ -2,7 +2,6 @@ const settingBtn = document.querySelector(".setting");
 const backgroundChange = document.querySelector(".backgroundChange");
 const essentialContainer = document.querySelector(".essential__container");
 const workingColor = document.querySelector(".working__colors");
-console.dir(workingColor);
 
 // checking default background
 const { matches } = window.matchMedia("(prefers-color-scheme: dark)");
