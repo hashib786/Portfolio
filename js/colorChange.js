@@ -8,12 +8,24 @@ const { matches } = window.matchMedia("(prefers-color-scheme: dark)");
 matches && document.body.classList.add("dark");
 
 export const colorChange = () => {
-  settingBtn.addEventListener("click", () => {
+  const closeSettingButton = () => {
+    essentialContainer.classList.remove("active");
+  };
+
+  settingBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
     essentialContainer.classList.toggle("active");
+    const classes = [...essentialContainer.classList];
+    classes.forEach((ele) =>
+      ele === "active"
+        ? document.addEventListener("click", closeSettingButton)
+        : document.removeEventListener("click", closeSettingButton)
+    );
   });
 
   colorItem.forEach((ele, index) => {
-    ele.addEventListener("click", () => {
+    ele.addEventListener("click", (e) => {
+      e.stopPropagation();
       const classVal = index + 1;
       if (classVal > 5 && classVal < 1) return;
       const classes = [...document.body.classList].filter(
