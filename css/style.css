@@ -415,8 +415,9 @@ body.color5 {
 }
 
 .home__detail {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 3.2rem;
+    line-height: 1.7rem;
 }
 
 .btn {
@@ -619,8 +620,9 @@ body.color5 {
     row-gap: .6rem;
 }
 
-.company__detail .highlight {
+.highlight {
     color: var(--working-color);
+    font-weight: bold;
 }
 
 .company__hadings {
