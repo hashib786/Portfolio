@@ -694,9 +694,10 @@
           <h1 class="heading"><span>SEND ME AN EMAIL</span></h1>
           <h3>I'M VERY RESPONSIVE TO MESSAGE</h3>
 
-          <form class="contact__form">
+          <form class="contact__form" id="sendMailForm">
             <div class="contact__name">
               <input
+                id="name"
                 class="half__width"
                 required
                 type="text"
@@ -704,6 +705,7 @@
                 placeholder="Your Name *"
               />
               <input
+                id="email"
                 class="half__width"
                 required
                 type="email"
@@ -711,6 +713,7 @@
               />
             </div>
             <input
+              id="subject"
               class="full__width"
               required
               type="text"
@@ -718,6 +721,7 @@
               placeholder="Subject *"
             />
             <textarea
+              id="message"
               class="full__width"
               required
               cols="15"
