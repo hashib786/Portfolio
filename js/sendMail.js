@@ -8,7 +8,10 @@ export const sendMail = () => {
     const email = document.getElementById("email");
     const subject = document.getElementById("subject");
     const message = document.getElementById("message");
+    const sendMailBtn = document.getElementById("sendMailBtn");
 
+    sendMailBtn.style.cursor = "not-allowed";
+    sendMailBtn.textContent = "Sending Mail...";
     const response = await fetch(
       "https://send-mail-hashib.onrender.com/sendMail",
       {
@@ -30,6 +33,7 @@ export const sendMail = () => {
       email.value = "";
       subject.value = "";
       message.value = "";
+      sendMailBtn.textContent = "Send Message";
     } else {
       console.error("Error creating post:", response.statusText);
     }
