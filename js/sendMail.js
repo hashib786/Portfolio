@@ -26,11 +26,10 @@ export const sendMail = () => {
     );
 
     if (response.ok) {
-      const newPost = await response.json();
-      name.textContent = "";
-      email.textContent = "";
-      subject.textContent = "";
-      message.textContent = "";
+      name.value = "";
+      email.value = "";
+      subject.value = "";
+      message.value = "";
     } else {
       console.error("Error creating post:", response.statusText);
     }
